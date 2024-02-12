@@ -1,0 +1,268 @@
+{
+  "itemId" : "_MLRiEGorEe6mP8URQh825Q",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_cpzs4GoyEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_crJwsWoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_RowSeparator"
+    }, {
+      "id" : "_crJwsmoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Header"
+    }, {
+      "id" : "_crJws2oyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_File"
+    }, {
+      "id" : "_crJwtGoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Encoding"
+    }, {
+      "id" : "_crJwtWoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_FieldSeparator"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_dwmdMGovEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_dxIBpWovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Port"
+    }, {
+      "id" : "_dxIBpmovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Database"
+    }, {
+      "id" : "_dxIBpGovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Password"
+    }, {
+      "id" : "_dxIBomovEe6mP8URQh825Q",
+      "name" : "mysqldb1_AdditionalParams"
+    }, {
+      "id" : "_dxIBoWovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Login"
+    }, {
+      "id" : "_dxIBo2ovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_MZJM4GpVEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_MadbhmpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Port"
+    }, {
+      "id" : "_MadbhGpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Schema"
+    }, {
+      "id" : "_MadbgmpVEe6mP8URQh825Q",
+      "name" : "Azuredb_AdditionalParams"
+    }, {
+      "id" : "_MadbgWpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Login"
+    }, {
+      "id" : "_Madbg2pVEe6mP8URQh825Q",
+      "name" : "Azuredb_Server"
+    }, {
+      "id" : "_Madbh2pVEe6mP8URQh825Q",
+      "name" : "Azuredb_Database"
+    }, {
+      "id" : "_MadbhWpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Password"
+    } ]
+  }, {
+    "contextName" : "Development",
+    "repoId" : "_cpzs4GoyEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_crJwt2oyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_RowSeparator"
+    }, {
+      "id" : "_crJwuGoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Header"
+    }, {
+      "id" : "_crJwuWoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_File"
+    }, {
+      "id" : "_crJwumoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Encoding"
+    }, {
+      "id" : "_crJwu2oyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_FieldSeparator"
+    } ]
+  }, {
+    "contextName" : "Development",
+    "repoId" : "_dwmdMGovEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_dxIBpWovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Port"
+    }, {
+      "id" : "_dxIBpmovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Database"
+    }, {
+      "id" : "_dxIBpGovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Password"
+    }, {
+      "id" : "_dxIBomovEe6mP8URQh825Q",
+      "name" : "mysqldb1_AdditionalParams"
+    }, {
+      "id" : "_dxIBoWovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Login"
+    }, {
+      "id" : "_dxIBo2ovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Server"
+    } ]
+  }, {
+    "contextName" : "Development",
+    "repoId" : "_MZJM4GpVEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_MadbjmpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Port"
+    }, {
+      "id" : "_MadbjGpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Schema"
+    }, {
+      "id" : "_MadbimpVEe6mP8URQh825Q",
+      "name" : "Azuredb_AdditionalParams"
+    }, {
+      "id" : "_MadbiWpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Login"
+    }, {
+      "id" : "_Madbi2pVEe6mP8URQh825Q",
+      "name" : "Azuredb_Server"
+    }, {
+      "id" : "_Madbj2pVEe6mP8URQh825Q",
+      "name" : "Azuredb_Database"
+    }, {
+      "id" : "_MadbjWpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Password"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_cpzs4GoyEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_crJwvWoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_RowSeparator"
+    }, {
+      "id" : "_crJwvmoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Header"
+    }, {
+      "id" : "_crJwv2oyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_File"
+    }, {
+      "id" : "_crJwwGoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Encoding"
+    }, {
+      "id" : "_crJwwWoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_FieldSeparator"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_dwmdMGovEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_dxIBpWovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Port"
+    }, {
+      "id" : "_dxIBpmovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Database"
+    }, {
+      "id" : "_dxIBpGovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Password"
+    }, {
+      "id" : "_dxIBomovEe6mP8URQh825Q",
+      "name" : "mysqldb1_AdditionalParams"
+    }, {
+      "id" : "_dxIBoWovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Login"
+    }, {
+      "id" : "_dxIBo2ovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Server"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_MZJM4GpVEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_MadblmpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Port"
+    }, {
+      "id" : "_MadblGpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Schema"
+    }, {
+      "id" : "_MadbkmpVEe6mP8URQh825Q",
+      "name" : "Azuredb_AdditionalParams"
+    }, {
+      "id" : "_MadbkWpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Login"
+    }, {
+      "id" : "_Madbk2pVEe6mP8URQh825Q",
+      "name" : "Azuredb_Server"
+    }, {
+      "id" : "_Madbl2pVEe6mP8URQh825Q",
+      "name" : "Azuredb_Database"
+    }, {
+      "id" : "_MadblWpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Password"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_cpzs4GoyEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_crJww2oyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_RowSeparator"
+    }, {
+      "id" : "_crJwxGoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Header"
+    }, {
+      "id" : "_crJwxWoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_File"
+    }, {
+      "id" : "_crJwxmoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Encoding"
+    }, {
+      "id" : "_crJwx2oyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_FieldSeparator"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_dwmdMGovEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_dxIBpWovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Port"
+    }, {
+      "id" : "_dxIBpmovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Database"
+    }, {
+      "id" : "_dxIBpGovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Password"
+    }, {
+      "id" : "_dxIBomovEe6mP8URQh825Q",
+      "name" : "mysqldb1_AdditionalParams"
+    }, {
+      "id" : "_dxIBoWovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Login"
+    }, {
+      "id" : "_dxIBo2ovEe6mP8URQh825Q",
+      "name" : "mysqldb1_Server"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_MZJM4GpVEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_MadbnmpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Port"
+    }, {
+      "id" : "_MadbnGpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Schema"
+    }, {
+      "id" : "_MadbmmpVEe6mP8URQh825Q",
+      "name" : "Azuredb_AdditionalParams"
+    }, {
+      "id" : "_MadbmWpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Login"
+    }, {
+      "id" : "_Madbm2pVEe6mP8URQh825Q",
+      "name" : "Azuredb_Server"
+    }, {
+      "id" : "_Madbn2pVEe6mP8URQh825Q",
+      "name" : "Azuredb_Database"
+    }, {
+      "id" : "_MadbnWpVEe6mP8URQh825Q",
+      "name" : "Azuredb_Password"
+    } ]
+  } ]
+}

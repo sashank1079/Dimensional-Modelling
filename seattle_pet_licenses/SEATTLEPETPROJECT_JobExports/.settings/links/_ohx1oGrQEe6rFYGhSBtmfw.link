@@ -1,0 +1,23 @@
+{
+  "itemId" : "_ohx1oGrQEe6rFYGhSBtmfw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_jPSBQGrQEe6rFYGhSBtmfw",
+    "parameterList" : [ {
+      "id" : "_jQp6QWrQEe6rFYGhSBtmfw",
+      "name" : "geo_data_Header"
+    }, {
+      "id" : "_jQp6QmrQEe6rFYGhSBtmfw",
+      "name" : "geo_data_FieldSeparator"
+    }, {
+      "id" : "_jQp6Q2rQEe6rFYGhSBtmfw",
+      "name" : "geo_data_Encoding"
+    }, {
+      "id" : "_jQp6RGrQEe6rFYGhSBtmfw",
+      "name" : "geo_data_File"
+    }, {
+      "id" : "_jQp6RWrQEe6rFYGhSBtmfw",
+      "name" : "geo_data_RowSeparator"
+    } ]
+  } ]
+}

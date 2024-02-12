@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_crJwsGoyEe6mP8URQh825Q">
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_RowSeparator" prompt="SeattlePetLicenses_tsv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" xmi:id="_crJwsWoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_Header" prompt="SeattlePetLicenses_tsv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_crJwsmoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_File" prompt="SeattlePetLicenses_tsv_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/Users/Sashank Machiraju/Downloads/Seattle_Pet_Licenses.tsv" xmi:id="_crJws2oyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_Encoding" prompt="SeattlePetLicenses_tsv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8" xmi:id="_crJwtGoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_FieldSeparator" prompt="SeattlePetLicenses_tsv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\t&quot;" xmi:id="_crJwtWoyEe6mP8URQh825Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Development" xmi:id="_crJwtmoyEe6mP8URQh825Q">
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_RowSeparator" prompt="SeattlePetLicenses_tsv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" xmi:id="_crJwt2oyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_Header" prompt="SeattlePetLicenses_tsv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_crJwuGoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_File" prompt="SeattlePetLicenses_tsv_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/Users/Sashank Machiraju/Downloads/Seattle_Pet_Licenses.tsv" xmi:id="_crJwuWoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_Encoding" prompt="SeattlePetLicenses_tsv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8" xmi:id="_crJwumoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_FieldSeparator" prompt="SeattlePetLicenses_tsv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\t&quot;" xmi:id="_crJwu2oyEe6mP8URQh825Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Production" xmi:id="_crJwvGoyEe6mP8URQh825Q">
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_RowSeparator" prompt="SeattlePetLicenses_tsv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" xmi:id="_crJwvWoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_Header" prompt="SeattlePetLicenses_tsv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_crJwvmoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_File" prompt="SeattlePetLicenses_tsv_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/Users/Sashank Machiraju/Downloads/Seattle_Pet_Licenses.tsv" xmi:id="_crJwv2oyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_Encoding" prompt="SeattlePetLicenses_tsv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8" xmi:id="_crJwwGoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_FieldSeparator" prompt="SeattlePetLicenses_tsv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\t&quot;" xmi:id="_crJwwWoyEe6mP8URQh825Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Test" xmi:id="_crJwwmoyEe6mP8URQh825Q">
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_RowSeparator" prompt="SeattlePetLicenses_tsv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" xmi:id="_crJww2oyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_Header" prompt="SeattlePetLicenses_tsv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_crJwxGoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_File" prompt="SeattlePetLicenses_tsv_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/Users/Sashank Machiraju/Downloads/Seattle_Pet_Licenses.tsv" xmi:id="_crJwxWoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_Encoding" prompt="SeattlePetLicenses_tsv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8" xmi:id="_crJwxmoyEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="SeattlePetLicenses_tsv_FieldSeparator" prompt="SeattlePetLicenses_tsv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\t&quot;" xmi:id="_crJwx2oyEe6mP8URQh825Q"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ad0c74e9-ca24-410f-b60c-3dc36f4793c0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JUF23K4zzYA5upxDcUGO7CLtEpL0U0VUDqUlHuM27aeGxya3jNZns0WIQHVEdkmgEXD2KXSCDYzS&#13;
+x2EfOKEcQw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9270efe3-910c-4d75-897e-1155bd5d0a45"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xZUMYhL9DnfLLSOHcaqt+lKeRV2Q1zhOU86NL6FpC6zLYRYs+IcoR9MOGS/fjJGOEiNPwAxsLvMP&#13;
+LcMyB64R+A==</DigestValue></Reference></SignedInfo><SignatureValue>QPcfdKS0mWC1KfUIofCgmDGMjWxVoNZAZjuYg23lBiLeuIHrJgzo28ZwXfro3Ra6LYQFf7Gbnvg0&#13;
+K3hgjMJomRevrHTGnM9V3oWWOL/3BJtFI+Ia5wpqipES53CqH/sX5Z4L35aVN6ndufP19eOeQFrM&#13;
+2RmjmyI1Jnn0XeN6Lx1JFQ6GWN0BAq0aFTrX+6ANht679CtF/yVoS4ILmKrU8AkarC2m3vBvLpfy&#13;
+ly783gt4D6HYvPUsus2bGbSULffd/Q1qgKvXld8N0itfhxKkFiQ2I4Tp9gXKUnduX4ZIP40+2Ul4&#13;
+/+H40+XRpvGwz7512SUXePQJAr6HlPwlKIQ/UA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9270efe3-910c-4d75-897e-1155bd5d0a45" Target="#_ad0c74e9-ca24-410f-b60c-3dc36f4793c0"><Timestamp>2023-10-21 17:27:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

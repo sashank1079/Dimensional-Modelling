@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="__GgxoGoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_RowSeparator" prompt="SeattlePetLicenses_tsv_RowSeparator?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="__GgxoWoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_Header" prompt="SeattlePetLicenses_tsv_Header?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="__GgxomoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_File" prompt="SeattlePetLicenses_tsv_File?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_File" value="C:/Users/Sashank Machiraju/Downloads/Seattle_Pet_Licenses.tsv"/>
+    <contextParameter comment="" internalId="__Ggxo2oyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_Encoding" prompt="SeattlePetLicenses_tsv_Encoding?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="__GgxpGoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_FieldSeparator" prompt="SeattlePetLicenses_tsv_FieldSeparator?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="&quot;\t&quot;"/>
+    <contextParameter comment="" internalId="_LEqKYGpOEe6mP8URQh825Q" name="mysqldb1_Port" prompt="mysqldb1_Port?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_LEqKYWpOEe6mP8URQh825Q" name="mysqldb1_Database" prompt="mysqldb1_Database?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="damg7370"/>
+    <contextParameter comment="" internalId="_LEqxcGpOEe6mP8URQh825Q" name="mysqldb1_Password" prompt="mysqldb1_Password?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_Password" value="enc:system.encryption.key.v1:H05jXIYN0pzBAhSdwV1iV7ADSeAl/U44vGnkjpgsJCDnCo8O"/>
+    <contextParameter comment="" internalId="_LEqxcWpOEe6mP8URQh825Q" name="mysqldb1_AdditionalParams" prompt="mysqldb1_AdditionalParams?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_LEqxcmpOEe6mP8URQh825Q" name="mysqldb1_Login" prompt="mysqldb1_Login?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_LEqxc2pOEe6mP8URQh825Q" name="mysqldb1_Server" prompt="mysqldb1_Server?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_Vfo3UGpVEe6mP8URQh825Q" name="Azuredb_Port" prompt="Azuredb_Port?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_VfpeYGpVEe6mP8URQh825Q" name="Azuredb_Schema" prompt="Azuredb_Schema?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_VfpeYWpVEe6mP8URQh825Q" name="Azuredb_AdditionalParams" prompt="Azuredb_AdditionalParams?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_VfpeYmpVEe6mP8URQh825Q" name="Azuredb_Login" prompt="Azuredb_Login?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="nonadminsm"/>
+    <contextParameter comment="" internalId="_VfpeY2pVEe6mP8URQh825Q" name="Azuredb_Server" prompt="Azuredb_Server?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="dadabi2023sm.database.windows.net"/>
+    <contextParameter comment="" internalId="_VfpeZGpVEe6mP8URQh825Q" name="Azuredb_Database" prompt="Azuredb_Database?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="mainProjectDB"/>
+    <contextParameter comment="" internalId="_VfpeZWpVEe6mP8URQh825Q" name="Azuredb_Password" prompt="Azuredb_Password?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_Password" value="enc:system.encryption.key.v1:9fSN7XJyjK968d5oP3962Ri4PsB6RX9xQB7iLWS6VXvjODJy1HdKoLFDYA=="/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Development">
+    <contextParameter comment="" internalId="__GgxpWoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_RowSeparator" prompt="SeattlePetLicenses_tsv_RowSeparator?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="__GgxpmoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_Header" prompt="SeattlePetLicenses_tsv_Header?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="__Ggxp2oyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_File" prompt="SeattlePetLicenses_tsv_File?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_File" value="C:/Users/Sashank Machiraju/Downloads/Seattle_Pet_Licenses.tsv"/>
+    <contextParameter comment="" internalId="__GgxqGoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_Encoding" prompt="SeattlePetLicenses_tsv_Encoding?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="__GgxqWoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_FieldSeparator" prompt="SeattlePetLicenses_tsv_FieldSeparator?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="&quot;\t&quot;"/>
+    <contextParameter comment="" internalId="_LEqxdGpOEe6mP8URQh825Q" name="mysqldb1_Port" prompt="mysqldb1_Port?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_LEqxdWpOEe6mP8URQh825Q" name="mysqldb1_Database" prompt="mysqldb1_Database?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="damg7370"/>
+    <contextParameter comment="" internalId="_LEqxdmpOEe6mP8URQh825Q" name="mysqldb1_Password" prompt="mysqldb1_Password?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_Password" value="enc:system.encryption.key.v1:9ym9gTr4LDvU9qpB4P6ztzO9x+kfjH6Ngv09dwioKIY6EIrP"/>
+    <contextParameter comment="" internalId="_LEqxd2pOEe6mP8URQh825Q" name="mysqldb1_AdditionalParams" prompt="mysqldb1_AdditionalParams?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_LEqxeGpOEe6mP8URQh825Q" name="mysqldb1_Login" prompt="mysqldb1_Login?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_LEqxeWpOEe6mP8URQh825Q" name="mysqldb1_Server" prompt="mysqldb1_Server?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_VfpeZmpVEe6mP8URQh825Q" name="Azuredb_Port" prompt="Azuredb_Port?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_VfpeZ2pVEe6mP8URQh825Q" name="Azuredb_Schema" prompt="Azuredb_Schema?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_VfpeaGpVEe6mP8URQh825Q" name="Azuredb_AdditionalParams" prompt="Azuredb_AdditionalParams?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_VfpeaWpVEe6mP8URQh825Q" name="Azuredb_Login" prompt="Azuredb_Login?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="nonadminsm"/>
+    <contextParameter comment="" internalId="_VfpeampVEe6mP8URQh825Q" name="Azuredb_Server" prompt="Azuredb_Server?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="dadabi2023sm.database.windows.net"/>
+    <contextParameter comment="" internalId="_Vfpea2pVEe6mP8URQh825Q" name="Azuredb_Database" prompt="Azuredb_Database?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="mainProjectDB"/>
+    <contextParameter comment="" internalId="_VfpebGpVEe6mP8URQh825Q" name="Azuredb_Password" prompt="Azuredb_Password?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_Password" value="enc:system.encryption.key.v1:rH0crmdysf5nB/JAk1rTT+4GYkRF1HNPa0QlY0YeoaljX6k66m1rY7mMzw=="/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Production">
+    <contextParameter comment="" internalId="__GgxqmoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_RowSeparator" prompt="SeattlePetLicenses_tsv_RowSeparator?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="__Ggxq2oyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_Header" prompt="SeattlePetLicenses_tsv_Header?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="__GgxrGoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_File" prompt="SeattlePetLicenses_tsv_File?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_File" value="C:/Users/Sashank Machiraju/Downloads/Seattle_Pet_Licenses.tsv"/>
+    <contextParameter comment="" internalId="__GgxrWoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_Encoding" prompt="SeattlePetLicenses_tsv_Encoding?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="__GgxrmoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_FieldSeparator" prompt="SeattlePetLicenses_tsv_FieldSeparator?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="&quot;\t&quot;"/>
+    <contextParameter comment="" internalId="_LEqxempOEe6mP8URQh825Q" name="mysqldb1_Port" prompt="mysqldb1_Port?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_LEqxe2pOEe6mP8URQh825Q" name="mysqldb1_Database" prompt="mysqldb1_Database?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="damg7370"/>
+    <contextParameter comment="" internalId="_LErYgGpOEe6mP8URQh825Q" name="mysqldb1_Password" prompt="mysqldb1_Password?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_Password" value="enc:system.encryption.key.v1:5XV6gihxOcvyewHOUTvf8bqpeFxPx6ULJ+BeusBe65YaojsM"/>
+    <contextParameter comment="" internalId="_LErYgWpOEe6mP8URQh825Q" name="mysqldb1_AdditionalParams" prompt="mysqldb1_AdditionalParams?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_LErYgmpOEe6mP8URQh825Q" name="mysqldb1_Login" prompt="mysqldb1_Login?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_LErYg2pOEe6mP8URQh825Q" name="mysqldb1_Server" prompt="mysqldb1_Server?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_VfpebWpVEe6mP8URQh825Q" name="Azuredb_Port" prompt="Azuredb_Port?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_VfpebmpVEe6mP8URQh825Q" name="Azuredb_Schema" prompt="Azuredb_Schema?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vfpeb2pVEe6mP8URQh825Q" name="Azuredb_AdditionalParams" prompt="Azuredb_AdditionalParams?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_VfpecGpVEe6mP8URQh825Q" name="Azuredb_Login" prompt="Azuredb_Login?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="nonadminsm"/>
+    <contextParameter comment="" internalId="_VfpecWpVEe6mP8URQh825Q" name="Azuredb_Server" prompt="Azuredb_Server?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="dadabi2023sm.database.windows.net"/>
+    <contextParameter comment="" internalId="_VfpecmpVEe6mP8URQh825Q" name="Azuredb_Database" prompt="Azuredb_Database?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="mainProjectDB"/>
+    <contextParameter comment="" internalId="_Vfpec2pVEe6mP8URQh825Q" name="Azuredb_Password" prompt="Azuredb_Password?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_Password" value="enc:system.encryption.key.v1:iaxcHY17dLFSecfBLpGUcnERvhBqYk09danx8iRhoLMFiL2DPs6E/Pjf1w=="/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="" internalId="__Ggxr2oyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_RowSeparator" prompt="SeattlePetLicenses_tsv_RowSeparator?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="__GgxsGoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_Header" prompt="SeattlePetLicenses_tsv_Header?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="__GgxsWoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_File" prompt="SeattlePetLicenses_tsv_File?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_File" value="C:/Users/Sashank Machiraju/Downloads/Seattle_Pet_Licenses.tsv"/>
+    <contextParameter comment="" internalId="__GgxsmoyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_Encoding" prompt="SeattlePetLicenses_tsv_Encoding?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="__Ggxs2oyEe6mP8URQh825Q" name="SeattlePetLicenses_tsv_FieldSeparator" prompt="SeattlePetLicenses_tsv_FieldSeparator?" promptNeeded="false" repositoryContextId="_cpzs4GoyEe6mP8URQh825Q" type="id_String" value="&quot;\t&quot;"/>
+    <contextParameter comment="" internalId="_LErYhGpOEe6mP8URQh825Q" name="mysqldb1_Port" prompt="mysqldb1_Port?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_LErYhWpOEe6mP8URQh825Q" name="mysqldb1_Database" prompt="mysqldb1_Database?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="damg7370"/>
+    <contextParameter comment="" internalId="_LErYhmpOEe6mP8URQh825Q" name="mysqldb1_Password" prompt="mysqldb1_Password?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_Password" value="enc:system.encryption.key.v1:9nP3QrIwQEHkaiE08lGsH5aklycg/ZfOGcu4Le5YIm2tXZ7o"/>
+    <contextParameter comment="" internalId="_LErYh2pOEe6mP8URQh825Q" name="mysqldb1_AdditionalParams" prompt="mysqldb1_AdditionalParams?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_LErYiGpOEe6mP8URQh825Q" name="mysqldb1_Login" prompt="mysqldb1_Login?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_LErYiWpOEe6mP8URQh825Q" name="mysqldb1_Server" prompt="mysqldb1_Server?" promptNeeded="false" repositoryContextId="_dwmdMGovEe6mP8URQh825Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_VfpedGpVEe6mP8URQh825Q" name="Azuredb_Port" prompt="Azuredb_Port?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_VfpedWpVEe6mP8URQh825Q" name="Azuredb_Schema" prompt="Azuredb_Schema?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_VfpedmpVEe6mP8URQh825Q" name="Azuredb_AdditionalParams" prompt="Azuredb_AdditionalParams?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vfped2pVEe6mP8URQh825Q" name="Azuredb_Login" prompt="Azuredb_Login?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="nonadminsm"/>
+    <contextParameter comment="" internalId="_VfpeeGpVEe6mP8URQh825Q" name="Azuredb_Server" prompt="Azuredb_Server?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="dadabi2023sm.database.windows.net"/>
+    <contextParameter comment="" internalId="_VfpeeWpVEe6mP8URQh825Q" name="Azuredb_Database" prompt="Azuredb_Database?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_String" value="mainProjectDB"/>
+    <contextParameter comment="" internalId="_VfpeempVEe6mP8URQh825Q" name="Azuredb_Password" prompt="Azuredb_Password?" promptNeeded="false" repositoryContextId="_MZJM4GpVEe6mP8URQh825Q" type="id_Password" value="enc:system.encryption.key.v1:HSFbdO3wWLu7HAT8Fw/V6cKNZN7tid05I3+RKm+Y+T5zuwMw7jjKDgSRyQ=="/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:AiYxOm5TdcfKGIAH9XZEZJzW1ToDsmM1YpwNh+R9"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/New folder/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VE5LKhhdINwsj5O9NSJOLC63yIJFOtDqDq+S9TPW"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_aR700Gc4Ee6IVdLopqJJYw" name="DataOperation"/>
+    <routinesParameter id="_aSGz8Gc4Ee6IVdLopqJJYw" name="Mathematical"/>
+    <routinesParameter id="_aSTBMGc4Ee6IVdLopqJJYw" name="Numeric"/>
+    <routinesParameter id="_aSoYYGc4Ee6IVdLopqJJYw" name="Relational"/>
+    <routinesParameter id="_aP4mYGc4Ee6IVdLopqJJYw" name="SQLike"/>
+    <routinesParameter id="_aS8hcGc4Ee6IVdLopqJJYw" name="StringHandling"/>
+    <routinesParameter id="_aTIHoGc4Ee6IVdLopqJJYw" name="TalendDataGenerator"/>
+    <routinesParameter id="_aTTGwGc4Ee6IVdLopqJJYw" name="TalendDate"/>
+    <routinesParameter id="_aTtWcGc4Ee6IVdLopqJJYw" name="TalendStringUtil"/>
+    <routinesParameter id="_aTfUAGc4Ee6IVdLopqJJYw" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_NvIPkGotEe6mP8URQh825Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" show="false" value=""/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.SeattlePetLicenses_tsv_File"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.SeattlePetLicenses_tsv_RowSeparator"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="context.SeattlePetLicenses_tsv_RowSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.SeattlePetLicenses_tsv_FieldSeparator"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.SeattlePetLicenses_tsv_Header"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_NvIPkGotEe6mP8URQh825Q - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;D:/New folder&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Issue_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Number"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Animal_s_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Species"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Primary_Breed"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Secondary_Breed"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZIP_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.SeattlePetLicenses_tsv_Encoding"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Issue_Date"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Number"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Animal_s_Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Species"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Primary_Breed"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Secondary_Breed"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZIP_Code"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="SeattlePetLicenses_tsv"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="TO read Tab data from tsv file"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="40" name="License_Issue_Date" nullable="true" pattern="&quot;MMMM dd yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="40" name="License_Issue_Date" nullable="true" pattern="&quot;MMMM dd yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MLRiEGorEe6mP8URQh825Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="to match schema from source to destination. Performiong all transformations and mapping to multiple sources as per wish. The tsv file read and we added 2 columns to track data when load is performed and to generate an id for the load job. "/>
+    <metadata connector="FLOW" name="logtoconsole">
+      <column comment="" key="false" length="40" name="License_Issue_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="sqlDBOut" name="sqlDBOut">
+      <column comment="" key="false" length="50" name="License_Issue_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreatedDt" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DI_JobPID" nullable="true" originalLength="23" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="azureDBOut" name="azureDBOut">
+      <column comment="" key="false" length="50" name="License_Issue_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreatedDt" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DI_JobPID" nullable="true" originalLength="23" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="SystemDT" type="id_Date"/>
+        <mapperTableEntries expression="pid" name="ProcessId" type="id_String"/>
+      </varTables>
+      <outputTables name="logtoconsole" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.License_Issue_Date " name="License_Issue_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.License_Number " name="License_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Animal_s_Name " name="Animal_s_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Species " name="Species" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Primary_Breed " name="Primary_Breed" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Secondary_Breed " name="Secondary_Breed" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ZIP_Code " name="ZIP_Code" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="sqlDBOut" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.License_Issue_Date " name="License_Issue_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.License_Number " name="License_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Animal_s_Name " name="Animal_s_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Species " name="Species" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Primary_Breed " name="Primary_Breed" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Secondary_Breed " name="Secondary_Breed" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ZIP_Code " name="ZIP_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.SystemDT " name="DI_CreatedDt" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Var.ProcessId " name="DI_JobPID" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="azureDBOut" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.License_Issue_Date " name="License_Issue_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.License_Number " name="License_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Animal_s_Name " name="Animal_s_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Species " name="Species" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Primary_Breed " name="Primary_Breed" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Secondary_Breed " name="Secondary_Breed" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ZIP_Code " name="ZIP_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.SystemDT " name="DI_CreatedDt" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Var.ProcessId " name="DI_JobPID" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="License_Issue_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="License_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Animal_s_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Species" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Primary_Breed" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Secondary_Breed" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ZIP_Code" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Issue_Date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Number"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Animal_s_Name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Species"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Primary_Breed"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Secondary_Breed"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZIP_Code"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="40" name="License_Issue_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Issue_Date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Number"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Animal_s_Name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Species"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Primary_Breed"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Secondary_Breed"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZIP_Code"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
+      <column comment="" key="false" length="40" name="License_Issue_Date" nullable="true" pattern="&quot;MMMM dd yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_dV_2wGotEe6mP8URQh825Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysqldb1_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysqldb1_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysqldb1_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysqldb1_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VQ2aavIl7/sT/iKD4l91MjL/ugiYPswuNMdHLeee6eiPEbHyarCc1D1FI8o+N5Z5MVrNMwk="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_seattle_pet_license&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysqldb1_AdditionalParams"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Issue_Date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Animal_s_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Species"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Primary_Breed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Secondary_Breed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZIP_Code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_CreatedDt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_JobPID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="mysqldb"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="sqlDBOut" name="tDBOutput_1">
+      <column comment="" key="false" length="50" name="License_Issue_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreatedDt" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DI_JobPID" nullable="true" originalLength="23" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="sqlDBOut" name="REJECT">
+      <column comment="" key="false" length="50" name="License_Issue_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreatedDt" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DI_JobPID" nullable="true" originalLength="23" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_SuPjMGpUEe6mP8URQh825Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;dadabi2023sm.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;mainProjectDB&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;nonadminsm&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EQJxYhAh8YrB0F9lXD79Kyaxzrtmy+BGFRfFhqMaHUB9jsjIDGhcr8OJxwaX"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_seattle_pet_licenses&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="License_Issue_Date"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Issue_Date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="License_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Animal_s_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Species"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Primary_Breed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Secondary_Breed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZIP_Code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_CreatedDt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_JobPID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="azureDBOut" name="tDBOutput_2">
+      <column comment="" key="false" length="50" name="License_Issue_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreatedDt" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DI_JobPID" nullable="true" originalLength="23" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="azureDBOut" name="REJECT">
+      <column comment="" key="false" length="50" name="License_Issue_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Animal_s_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Species" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Primary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="46" name="Secondary_Breed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZIP_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DI_CreatedDt" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DI_JobPID" nullable="true" originalLength="23" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="REJECT" label="row2" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputDelimited_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="logtoconsole" lineStyle="0" metaname="logtoconsole" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="logtoconsole"/>
+  </connection>
+  <connection connectorName="FLOW" label="sqlDBOut" lineStyle="0" metaname="sqlDBOut" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="DI_CreatedDt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DI_JobPID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sqlDBOut"/>
+  </connection>
+  <connection connectorName="FLOW" label="azureDBOut" lineStyle="0" metaname="azureDBOut" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="azureDBOut"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b93201da-c577-4c0e-8c2b-a6ad67aef9d2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S9fcwVZpbDD4tEPvDJJTxrY2TabpX1dq3t47R8p4KkT0PohN/PFsYnqWrwFI6NT1Sy/vvOLjutAi&#13;
+LtWT+5W00A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c51f20b0-2a45-4832-9e51-0fe321088568"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6gauhPr/RRQfys9+NZXtIq1IsyJUJXmvDmEViEwKj3P75b0NTdLcwg4wgmCRB0PodMA8wLRAWsWa&#13;
+DbSCaLgfcQ==</DigestValue></Reference></SignedInfo><SignatureValue>f+Kn9i0lvq3H0+CTXiepu8G+ciaJ3iuTbidTjAJkaE1jQOEzmDRd4bacItbI1l6s1g5aFyhWgW7k&#13;
++VPQ90viFYVT2jW9smzxPJetYRuMug29RyEVVinjf9XVouVV6Mj/sHTLQtaNJBds8ULFzCkpE/g3&#13;
+QAoBI5s5SRBeCuLg9K6fp+zqxrZYWBaGaEoLvYg0MeM+oLeumKCvQw+KAScU7+vXPTAq7thpt8c0&#13;
+paM4e+qXsdBK/2IKnWNQBqCCs1ygapx1f/IHuX0QiOTeNGeg6Y/ZFEmaXBk6CmvggBuuMm4eRFRS&#13;
+Y3OkuyZCtEl7G1AGk6UugJZzRsA9gJpdC1+AbQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c51f20b0-2a45-4832-9e51-0fe321088568" Target="#_b93201da-c577-4c0e-8c2b-a6ad67aef9d2"><Timestamp>2023-10-23 17:48:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

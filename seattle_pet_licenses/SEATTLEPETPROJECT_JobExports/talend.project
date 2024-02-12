@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_YJKKcGc4Ee6IVdLopqJJYw" label="SeattlePetProject" description="" language="java" technicalLabel="SEATTLEPETPROJECT" local="true" author="_YJKKcWc4Ee6IVdLopqJJYw" productVersion="Talend Cloud Data Fabric-8.0.1.20230913_0925-patch" type="DQ" itemsRelationVersion="1.3">
+    <migrationTask xmi:id="_YOBcUGc4Ee6IVdLopqJJYw" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_YJKKcWc4Ee6IVdLopqJJYw" login="machiraju.s@northeastern.edu" password="D41D8CD98F00B204E9800998ECF8427E"/>
+</xmi:XMI>

@@ -1,0 +1,23 @@
+{
+  "itemId" : "_NvIPkGotEe6mP8URQh825Q",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_cpzs4GoyEe6mP8URQh825Q",
+    "parameterList" : [ {
+      "id" : "_crJwsWoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_RowSeparator"
+    }, {
+      "id" : "_crJwsmoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Header"
+    }, {
+      "id" : "_crJws2oyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_File"
+    }, {
+      "id" : "_crJwtGoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_Encoding"
+    }, {
+      "id" : "_crJwtWoyEe6mP8URQh825Q",
+      "name" : "SeattlePetLicenses_tsv_FieldSeparator"
+    } ]
+  } ]
+}

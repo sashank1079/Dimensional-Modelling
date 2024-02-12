@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_MadbgGpVEe6mP8URQh825Q">
+    <contextParameter comment="" name="Azuredb_Login" prompt="Azuredb_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="nonadminsm" xmi:id="_MadbgWpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_AdditionalParams" prompt="Azuredb_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_MadbgmpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Server" prompt="Azuredb_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="dadabi2023sm.database.windows.net" xmi:id="_Madbg2pVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Schema" prompt="Azuredb_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_MadbhGpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Password" prompt="Azuredb_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:dgGbo9cgsRQK8NFMbVHNa6u4ImfGwB5k1D1705Jp/EVEGUzm+S4sSAONmQ==" xmi:id="_MadbhWpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Port" prompt="Azuredb_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_MadbhmpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Database" prompt="Azuredb_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="mainProjectDB" xmi:id="_Madbh2pVEe6mP8URQh825Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Development" xmi:id="_MadbiGpVEe6mP8URQh825Q">
+    <contextParameter comment="" name="Azuredb_Login" prompt="Azuredb_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="nonadminsm" xmi:id="_MadbiWpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_AdditionalParams" prompt="Azuredb_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_MadbimpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Server" prompt="Azuredb_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="dadabi2023sm.database.windows.net" xmi:id="_Madbi2pVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Schema" prompt="Azuredb_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_MadbjGpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Password" prompt="Azuredb_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:14zKSlSD2CNstCcW6+QjUaI6LENt1sVzVzO0AtubUOd8G3cv3enZt2Wstw==" xmi:id="_MadbjWpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Port" prompt="Azuredb_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_MadbjmpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Database" prompt="Azuredb_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="mainProjectDB" xmi:id="_Madbj2pVEe6mP8URQh825Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Production" xmi:id="_MadbkGpVEe6mP8URQh825Q">
+    <contextParameter comment="" name="Azuredb_Login" prompt="Azuredb_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="nonadminsm" xmi:id="_MadbkWpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_AdditionalParams" prompt="Azuredb_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_MadbkmpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Server" prompt="Azuredb_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="dadabi2023sm.database.windows.net" xmi:id="_Madbk2pVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Schema" prompt="Azuredb_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_MadblGpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Password" prompt="Azuredb_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:35DBcpbaRmVErmCSt07Of/8sHLqVIpSgS3QsSaAzSMahzyY6CtbWH1Hw3g==" xmi:id="_MadblWpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Port" prompt="Azuredb_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_MadblmpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Database" prompt="Azuredb_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="mainProjectDB" xmi:id="_Madbl2pVEe6mP8URQh825Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Test" xmi:id="_MadbmGpVEe6mP8URQh825Q">
+    <contextParameter comment="" name="Azuredb_Login" prompt="Azuredb_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="nonadminsm" xmi:id="_MadbmWpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_AdditionalParams" prompt="Azuredb_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_MadbmmpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Server" prompt="Azuredb_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="dadabi2023sm.database.windows.net" xmi:id="_Madbm2pVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Schema" prompt="Azuredb_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_MadbnGpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Password" prompt="Azuredb_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:W1sfWB9vJwseIWH0FIjpsdCOJhzmHmDR2aTC/TfBcCHdPccgt3HESpWrcw==" xmi:id="_MadbnWpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Port" prompt="Azuredb_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_MadbnmpVEe6mP8URQh825Q"/>
+    <contextParameter comment="" name="Azuredb_Database" prompt="Azuredb_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="mainProjectDB" xmi:id="_Madbn2pVEe6mP8URQh825Q"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a5957b95-a806-4431-8205-cf8e24b97f1e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jhSXML25fm2kc/6ygWNfjHW+EQ9YQVVVCIWzvMhGbouCfvvZma/czx/Ws0EXQ33cnxTN+vP3h4mk&#13;
+K8SeaAoKSA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_419624e6-c467-4089-ad65-a617c8850f92"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v2DCQn99DjjAGMT7MJkQPg8BOq4VzG7TNqqeowP0nVkgF8aH7n/LRnoaLjKOsRcPmdhiypLF9+PR&#13;
+42sE2t7ljA==</DigestValue></Reference></SignedInfo><SignatureValue>WYtEq4C8/5Io83wX2Bcye2qPUkpGFgEnDcYDO3pF653O2NCPFPmDW7DZDRRPETPlIV+x9nOBI62v&#13;
+ZV0eE+aGc9iVQSN+K1ylN+8u2AO4wqv9Aa9adIbkPabqH0A/9vycTKEY2Pserx3kxemLmU1VDXGs&#13;
+wyqYEUUIm1MF/xuRJM4hO/s5jUXfubJ6NijLpEJtB+3QzV9ZoYr9y5HpCRlCdJkLQztbnRigrFjg&#13;
+UQ/D+5jbFdUUA46AZWARuLQGCa//H+S4DjegmqB+z6RNvFfePS4iitMFZs0eexj6+yZgqETwR2am&#13;
+QC8wifp2+59BoZNH8q0uWW9cBrO95bOX3AeOFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_419624e6-c467-4089-ad65-a617c8850f92" Target="#_a5957b95-a806-4431-8205-cf8e24b97f1e"><Timestamp>2023-10-14 05:47:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
