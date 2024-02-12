@@ -1,0 +1,73 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Properties" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Name" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Expression" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_2" preview="pictures/_WbFrIGrSEe6rFYGhSBtmfw-tMap_2-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Mapping links display as:">AUTO</column>
+    <column name="Temp data directory path:"></column>
+    <column name="Max buffer size (nb of rows):">2000000</column>
+    <column name="Ignore trailing zeros for BigDecimal">true</column>
+    <column name="Show Information">false</column>
+    <column name="Comment"><![CDATA[]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="row6" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="date_sk" type="int" expression="" isNullable="false"/>
+        <entry name="Location_sk" type="int" expression="" isNullable="false"/>
+        <entry name="breed_sk" type="int" expression="" isNullable="false"/>
+        <entry name="License_Number" type="String" expression="" isNullable="true"/>
+        <entry name="NoOfPets" type="Integer" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="factload" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="fact_sk" type="Integer" expression="Numeric.sequence(&quot;plsk2&quot;,1,1) " isNullable="true"/>
+        <entry name="date_sk" type="int" expression="row6.date_sk " isNullable="false"/>
+        <entry name="breed_sk" type="int" expression="row6.breed_sk " isNullable="false"/>
+        <entry name="Location_sk" type="int" expression="row6.Location_sk " isNullable="false"/>
+        <entry name="noOfPets" type="Integer" expression="row6.NoOfPets " isNullable="true"/>
+        <entry name="pid" type="String" expression="Var.pid " isNullable="false"/>
+        <entry name="Date_to_warehouse" type="java.util.Date" expression="Var.Date_to_warehouse " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+    <table name="finallout" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="date_sk" type="int" expression="row6.date_sk " isNullable="false"/>
+        <entry name="Location_sk" type="int" expression="row6.Location_sk " isNullable="false"/>
+        <entry name="breed_sk" type="int" expression="row6.breed_sk " isNullable="false"/>
+        <entry name="fact_sk" type="Integer" expression="Numeric.sequence(&quot;plsk1&quot;,1,1) " isNullable="true"/>
+        <entry name="noOfPets" type="Integer" expression="row6.NoOfPets " isNullable="true"/>
+        <entry name="pid" type="String" expression="Var.pid  " isNullable="false"/>
+        <entry name="Date_to_warehouse" type="java.util.Date" expression="Var.Date_to_warehouse  " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+    <table name="out3" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="date_sk" type="int" expression="row6.date_sk  " isNullable="false"/>
+        <entry name="Location_sk" type="int" expression="row6.Location_sk  " isNullable="false"/>
+        <entry name="breed_sk" type="int" expression="row6.breed_sk  " isNullable="false"/>
+        <entry name="fact_sk" type="Integer" expression="Numeric.sequence(&quot;plsk&quot;,1,1)  " isNullable="true"/>
+        <entry name="noOfPets" type="Integer" expression="row6.NoOfPets  " isNullable="true"/>
+        <entry name="pid" type="String" expression="Var.pid   " isNullable="false"/>
+        <entry name="Date_to_warehouse" type="java.util.Date" expression="Var.Date_to_warehouse   " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+    <table name="out4" isMinimized="false" isReject="true" isRejectInnerJoin="true" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="true" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="newColumn" type="String" expression="row6.License_Number " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="pid" type="String" expression="pid " isNullable="false"/>
+        <entry name="Date_to_warehouse" type="java.util.Date" expression="TalendDate.getCurrentDate(); " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+</externalNode>

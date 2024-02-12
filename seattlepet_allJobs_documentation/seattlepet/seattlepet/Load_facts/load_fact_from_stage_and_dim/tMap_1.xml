@@ -1,0 +1,74 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Properties" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Name" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Expression" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_1" preview="pictures/_MLRiEGorEe6mP8URQh825Q-tMap_1-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Mapping links display as:">AUTO</column>
+    <column name="Temp data directory path:"></column>
+    <column name="Max buffer size (nb of rows):">2000000</column>
+    <column name="Ignore trailing zeros for BigDecimal">true</column>
+    <column name="Show Information">false</column>
+    <column name="Comment"><![CDATA[to match schema from source to destination. Performiong all transformations and mapping to multiple sources as per wish. The tsv file read and we added 2 columns to track data when load is performed and to generate an id for the load job. ]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="row1" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="License_Issue_Date" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="License_Number" type="String" expression="" isNullable="true"/>
+        <entry name="Animal_s_Name" type="String" expression="" isNullable="true"/>
+        <entry name="Species" type="String" expression="" isNullable="true"/>
+        <entry name="Primary_Breed" type="String" expression="" isNullable="true"/>
+        <entry name="Secondary_Breed" type="String" expression="" isNullable="true"/>
+        <entry name="ZIP_Code" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="logtoconsole" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="License_Issue_Date" type="java.util.Date" expression="row1.License_Issue_Date " isNullable="true"/>
+        <entry name="License_Number" type="String" expression="row1.License_Number " isNullable="true"/>
+        <entry name="Animal_s_Name" type="String" expression="row1.Animal_s_Name " isNullable="true"/>
+        <entry name="Species" type="String" expression="row1.Species " isNullable="true"/>
+        <entry name="Primary_Breed" type="String" expression="row1.Primary_Breed " isNullable="true"/>
+        <entry name="Secondary_Breed" type="String" expression="row1.Secondary_Breed " isNullable="true"/>
+        <entry name="ZIP_Code" type="String" expression="row1.ZIP_Code " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="sqlDBOut" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="License_Issue_Date" type="java.util.Date" expression="row1.License_Issue_Date " isNullable="true"/>
+        <entry name="License_Number" type="String" expression="row1.License_Number " isNullable="true"/>
+        <entry name="Animal_s_Name" type="String" expression="row1.Animal_s_Name " isNullable="true"/>
+        <entry name="Species" type="String" expression="row1.Species " isNullable="true"/>
+        <entry name="Primary_Breed" type="String" expression="row1.Primary_Breed " isNullable="true"/>
+        <entry name="Secondary_Breed" type="String" expression="row1.Secondary_Breed " isNullable="true"/>
+        <entry name="ZIP_Code" type="String" expression="row1.ZIP_Code " isNullable="true"/>
+        <entry name="DI_CreatedDt" type="java.util.Date" expression="Var.SystemDT " isNullable="true"/>
+        <entry name="DI_JobPID" type="String" expression="Var.ProcessId " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="azureDBOut" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="License_Issue_Date" type="java.util.Date" expression="row1.License_Issue_Date " isNullable="true"/>
+        <entry name="License_Number" type="String" expression="row1.License_Number " isNullable="true"/>
+        <entry name="Animal_s_Name" type="String" expression="row1.Animal_s_Name " isNullable="true"/>
+        <entry name="Species" type="String" expression="row1.Species " isNullable="true"/>
+        <entry name="Primary_Breed" type="String" expression="row1.Primary_Breed " isNullable="true"/>
+        <entry name="Secondary_Breed" type="String" expression="row1.Secondary_Breed " isNullable="true"/>
+        <entry name="ZIP_Code" type="String" expression="row1.ZIP_Code " isNullable="true"/>
+        <entry name="DI_CreatedDt" type="java.util.Date" expression="Var.SystemDT " isNullable="true"/>
+        <entry name="DI_JobPID" type="String" expression="Var.ProcessId " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="SystemDT" type="java.util.Date" expression="TalendDate.getCurrentDate() " isNullable="false"/>
+        <entry name="ProcessId" type="String" expression="pid" isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+</externalNode>

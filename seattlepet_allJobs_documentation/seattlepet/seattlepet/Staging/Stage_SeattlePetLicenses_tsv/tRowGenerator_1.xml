@@ -1,0 +1,11 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Properties" i18n.job.values="Values" i18n.rowgenerator.info.for="Row generator information for " i18n.job.column="Column" i18n.job.key="Key" i18n.job.type="Type" i18n.job.nullable="Nullable" i18n.job.length="Length" i18n.job.precision="Precision" i18n.rowgenerator.default="Default" i18n.job.comment="Comment" i18n.rowgenerator.functions="Functions" i18n.rowgenerator.parameters="Parameters" name="tRowGenerator_1" preview="">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Show Information">false</column>
+    <column name="Comment"><![CDATA[]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <column name="colDate" key="false" type="java.util.Date" nullable="true" length="" precision="" default="" comment="" functions="sequence(s1,1,1) ,dd )" parameters=""/>
+</externalNode>
