@@ -55,3 +55,30 @@ Null value %: 0.3% (129 records)
 Special characters: None
 Bad data: ZIP Codes are characteristically 5-digit numbers representing an area. However, in this dataset, there are few values in the zip code column which have 3- and 4-digit values.
 
+# Dimensional Model
+![PHYSICAL MODEL SS](https://github.com/sashank1079/Dimensional-Modelling/assets/122720872/fa54873e-56ce-41fd-b0a9-e242f1bbc680)
+
+![DIM MODEL SS](https://github.com/sashank1079/Dimensional-Modelling/assets/122720872/406341e6-acda-4109-b9a1-033c0bc4bfe9)
+
+# Talend jobs
+
+Staging Job
+
+![Staging_Job](https://github.com/sashank1079/Dimensional-Modelling/assets/122720872/44a6c15b-a741-4071-be33-9865ca9af3e0)
+
+Loading of Location Dimension
+
+![location_dim job](https://github.com/sashank1079/Dimensional-Modelling/assets/122720872/bd5dc97d-6441-4c68-8a7b-9f8c7bd02f83)
+
+Loading of Date Dimension
+
+![date_dim job](https://github.com/sashank1079/Dimensional-Modelling/assets/122720872/6b78e0af-7f6d-41cf-9841-7a202f19494c)
+
+Loading of Breed Dimension
+
+![Breed_Dim Job](https://github.com/sashank1079/Dimensional-Modelling/assets/122720872/3b1bb85b-b657-4241-8265-c971d3b1e13f)
+
+Loading of fact table
+
+![facttable job](https://github.com/sashank1079/Dimensional-Modelling/assets/122720872/7a0fd3f0-b6b3-4ac1-b601-6f7b6b651ce7)
+
